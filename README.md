@@ -1,24 +1,24 @@
 # 📖 Backlink to Text
 
-An efficient plugin designed for SiYuan Note, helping users quickly collect and organize current document's **backlinks** into structured lists, supporting **smart cursor positioning insertion** into the body text to make knowledge structuring easier.
+Helps users quickly extract the **Backlinks** of the current document into the main text. Supports multiple reference formats and customizable inserted content formats.
 
 ---
 
-## ✨ Key Features
+## ✨ Core Features
 
-*   🎯 **Smart Cursor Positioning**: Automatically detects the current cursor location.
-    *   If the current line is **empty**, it updates the content directly on that line;
-    *   If the current line **already has content**, it creates a **new line below** to insert the backlink list;
-    *   If no valid cursor is found, it appends to the end of the document.
-*   🔲 **Dual Display Interactive Panels**: Supports both **Popover Menu** (hung under the top bar, lightweight and quick) and **Dialog** (centered popup, spacious view) modes, switchable in settings.
-*   📋 **Diverse List Formats**: Supports ordered lists (`1.`), unordered lists (`•`), task lists (`☑`), blockquotes (`▍`), and plain text paragraphs (`¶`).
-*   🛠️ **Highly Flexible Template Engine**: Freely combine single backlink display formats using `${doc}` (backlink document) and `${content}` (corresponding reference text) tags.
-*   🔗 **Flexible Citation Expressions**:
-    *   Documents and texts support multiple formats: plain text, block reference `((id "title/text"))`, and hyperlink `[title](siyuan://...)`.
-    *   Optionally toggle whether to retain the current document title text within the reference text.
-*   🔄 **Smart State & Anti-Duplicate Sync**:
-    *   Automatically checks/filters uninserted backlinks, with friendly markers for already inserted ones.
-    *   If manually deleted from the document, the plugin automatically syncs state to allow re-insertion.
+* 🔲 **Dual Display Interactive Panels**: Supports two display modes: **Popover Menu** (hanging below the top bar, lightweight and quick) and **Dialog** (centered large popup with a broad view), which can be switched at any time in the settings.
+* 📋 **Diversified List Layouts**: Supports numbered lists (`1.`), unordered lists (`•`), task lists (`☑`), blockquotes (`▍`), and plain text paragraphs (`¶`).
+* 🛠️ **Highly Flexible Template Engine**: Supports freely combining the display format of a single backlink via `${doc}` (backlink document) and `${content}` (corresponding associated text) tags.
+* 🔗 **Flexible Reference Expression Methods**:
+    * Documents and text support multiple formats: plain text, block ref `((id "title/text"))`, hyperlinks `[title](siyuan://...)`.
+    * Freely choose whether to retain the current document title text in the corresponding text.
+* 🔄 **Smart Status & Anti-Duplicate Synchronization**:
+    * Automatically checks/filters uninserted backlinks, with inserted backlinks thoughtfully marked.
+    * If generated backlink blocks in the document are manually deleted, the plugin automatically syncs the status to allow re-insertion.
+* 🎯 **Smart Cursor Positioning for Insertion**: Automatically detects the current cursor position.
+    * If the current line is **empty**, updates the content directly on that line;
+    * If the current line **already has content**, creates a **new line below** it to insert the backlink list;
+    * If no valid cursor is found, automatically appends to the end of the document.
 
 ---
 
@@ -26,38 +26,45 @@ An efficient plugin designed for SiYuan Note, helping users quickly collect and 
 
 1. **Open Panel**:
    * Click the plugin top bar icon in the upper right corner of SiYuan Note.
-   * Or use the command: `Generate Backlink List (Open Selection Panel)`.
+   * Or use the shortcut command: `整理反链列表（打开选择面板）` (Organize Backlink List - Open Selection Panel).
 2. **Select Backlinks**:
-   * In the pop-up menu or dialog, the system automatically separates "Uninserted" and "Inserted" backlinks.
-   * Quick actions: `Uninserted Only`, `Select All`, `Deselect All`, `Invert Selection`.
+   * In the popup menu or dialog, the system automatically distinguishes between "Uninserted" and "Inserted" backlinks.
+   * Supports quick operations: `仅未插入` (Uninserted Only), `全选` (Select All), `全不选` (Deselect All), `反选` (Invert Selection).
 3. **Confirm Insertion**:
-   * Check the desired backlink items and click "Insert Selected" to seamlessly insert them at the cursor position.
+   * Check the desired backlink entries, click "Insert Selected Items", and they will be seamlessly integrated into the cursor position.
 
 ---
 
 ## ⚙️ Plugin Settings
 
-Right-click the top bar icon or open via command `Backlink to Text Settings` to customize your preferences:
+Right-click the top bar icon or open `反链整理插件设置` (Backlink Organization Plugin Settings) via command to customize the following preferences:
 
-*   **Basic Rendering Structure**:
-    *   **Display Mode**: Popover Menu / Centered Dialog
-    *   **List Type**: Ordered / Unordered / Task / Blockquote / Paragraph
-*   **Single Backlink Format Template**:
-    *   Provides visual tag buttons (`${doc}`, `${content}`) and quick common presets.
-*   **Citation Expression**:
-    *   Set backlink document format (Plain Text / Block Reference / Hyperlink).
-    *   Set reference text format (Plain Text / Block Reference / Hyperlink).
-    *   Whether to show the current document title in the body text.
-
----
-
-## ⌨️ Commands
-
-*   **Generate Backlink List (Open Selection Panel)**: Quickly invoke the backlink selection interface.
-*   **Backlink to Text Settings**: Quickly open the configuration center.
+* **Basic Rendering Structure**:
+    * **Panel Display Mode**: Popover Menu / Centered Dialog
+    * **Overall List Format**: Numbered List / Unordered List / Task List / Blockquote / Plain Text Paragraph
+* **Single Backlink Format Template**:
+    * Provides visual tag buttons (`${doc}`, `${content}`) and common presets for quick application.
+* **Reference Expression Methods**:
+    * Set backlink document format (Plain Text / Block Ref / Hyperlink).
+    * Set corresponding text format (Plain Text / Block Ref / Hyperlink).
+    * Whether to display the current document title text in the main text.
 
 ---
 
-## 💡 Right-Click Menu
+## ⌨️ Shortcut Commands
 
-*   Right-click the top bar icon to directly open the quick menu for **Plugin Settings**.
+* **整理反链列表（打开选择面板） (Organize Backlink List - Open Selection Panel)**: Quickly invoke the backlink selection interface.
+* **反链整理插件设置 (Backlink Organization Plugin Settings)**: Quickly open the configuration center.
+
+---
+
+## 💡 Mouse Right-Click Menu
+
+* Right-click the top bar icon to directly call up the shortcut menu and open **Plugin Settings**.
+
+---
+
+## Credits & Notes
+
+* This plugin icon was generated by ChatGPT.
+* This plugin code was generated by Doubao and Gemini.
