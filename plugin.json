@@ -1,0 +1,29 @@
+{
+  "name": "backlink-to-text",
+  "author": "琅玕",
+  "version": "1.0.0",
+  "minAppVersion": "3.0.0",
+  "kernels": ["all"],
+  "backends": ["all"],
+  "frontends": ["desktop", "desktop-window", "browser-desktop"],
+  "disabledInPublish": true,
+  "displayName": {
+    "default": "Backlink to Text",
+    "zh-CN": "反链插入正文"
+  },
+  "description": {
+    "default": "Collect and insert backlinks into text at the cursor position with customizable formatting, multi-mode panels, and smart tracking.",
+    "zh-CN": "一键将反链插入正文光标位置。支持气泡菜单与对话框双模式、自定义单条反链模板及去重同步。"
+  },
+  "readme": {
+    "default": "README.md",
+    "zh-CN": "README_zh_CN.md"
+  },
+  "keywords": [
+    "反链",
+    "backlink",
+    "双向链接",
+    "插入正文",
+    "整理"
+  ]
+}
